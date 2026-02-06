@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: #2563eb;
+    --primary-color: #000000;
     --secondary-color: #1e40af;
     --accent-color: #3b82f6;
     --text-primary: #1f2937;
@@ -92,6 +92,22 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     text-align: center;
+}
+
+.profile-picture {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero h1 {

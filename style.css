@@ -495,19 +495,21 @@ section {
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    text-align: center;
 }
 
 .contact-item {
     display: flex;
-    gap: 1.5rem;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .contact-item i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
 }
 
@@ -589,8 +591,13 @@ section {
     }
 
     .about-content,
-    .contact-content {
+    .contact-content-centered {
         grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 
     .projects-grid {

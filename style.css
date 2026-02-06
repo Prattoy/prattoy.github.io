@@ -6,7 +6,7 @@
 }
 
 :root {
-    --primary-color: #000000;
+    --primary-color: #2563eb;
     --secondary-color: #1e40af;
     --accent-color: #3b82f6;
     --text-primary: #1f2937;
@@ -454,7 +454,7 @@ section {
 }
 
 .pub-date {
-    color: var(--primary-color);
+    color: var(--text-primary);
     font-weight: 600;
     margin-bottom: 0.5rem;
 }

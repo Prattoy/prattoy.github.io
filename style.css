@@ -489,11 +489,8 @@ section {
     background-color: var(--bg-light);
 }
 
-.contact-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    max-width: 1000px;
+.contact-content-centered {
+    max-width: 800px;
     margin: 0 auto;
 }
 
@@ -530,36 +527,6 @@ section {
 
 .contact-item p {
     color: var(--text-secondary);
-}
-
-.contact-form {
-    background-color: var(--bg-white);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: var(--shadow);
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 1rem;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    font-family: inherit;
-    font-size: 1rem;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    outline: none;
-    border-color: var(--primary-color);
-}
-
-.contact-form button {
-    width: 100%;
-    border: none;
-    cursor: pointer;
 }
 
 /* Footer */

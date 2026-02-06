@@ -2,6 +2,9 @@
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
+// Set current year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
 hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
@@ -35,20 +38,6 @@ window.addEventListener('scroll', () => {
     } else {
         navbar.style.boxShadow = '0 1px 3px 0 rgba(0, 0, 0, 0.1)';
     }
-});
-
-// Contact form handling
-const contactForm = document.getElementById('contactForm');
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-
-    // Get form data
-    const formData = new FormData(contactForm);
-
-    // You can implement your form submission logic here
-    // For now, just show an alert
-    alert('Thank you for your message! I will get back to you soon.');
-    contactForm.reset();
 });
 
 // Intersection Observer for fade-in animations
